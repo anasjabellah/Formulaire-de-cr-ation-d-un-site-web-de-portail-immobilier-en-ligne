@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #a4c383;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+body::after{
+    position: absolute;
+    content: "";
+    left: -173px;
+    top: 0;
+    width: 302%;
+    transform: rotate(15deg);
+    height: 100%;
+    background-color: #b3cd98;
+    z-index: -1;
+}
+
+.body-content{
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-content-img{
+    width: 40%;
+    height: 100%;
+    background-image: url("img/pexels-max-vakhtbovych-7195591.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.body-content-form{
+    width: 60%;
+    height: 100%;
+}
+
+
+.contener{
+    width: 80%;
+    height: 100%;
+    margin: 10px auto;
+    padding: 30px 10px;
+}
+
+.contener h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: sans-serif;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+
+.forms{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.forms form{
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.forms form .searchlabel{
+    color: gray;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+.forms form input{
+    padding:15px 10px;
+    margin: 15px 0;
+    border: none;
+    border-bottom: 2px solid gray ;
+    outline: none;
+    background-color: rgb(233, 232, 232);
+}
+
+::placeholder {
+    color: gray;
+    letter-spacing: 3px;
+    font-size: 1.5em;
+}
+
+.chok-chanbres , .chok-prex , .type-propriete{
+    margin-top: 20px;
+}
+
+.chok-chanbres p , .chok-prex p , .type-propriete label{
+    color: gray;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+.forms form input[type='radio'] {
+    width: 15px;
+    height: 15px;
+    color: #a4c383;
+}
+
+
+
+.type-propriete label{
+    display: block;
+}
+
+.type-propriete select{
+    width: 100%;
+    padding: 15px 10px;
+    margin: 20px 0;
+    border: none;
+    border-bottom: 2px solid gray ;
+    background-color: rgb(233, 232, 232);
+    color: gray;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+.type-propriete select .option{
+    padding: 0 10px;
+}
+.type-propriete select .option:hover{
+    background-color: #a4c383 !important;
+    color: black !important;
+}
+
+select.decorated option:hover {
+    background-color: #a4c383 !important;
+    color: black !important;
+}
+
+.disabled-selected-hidden{
+    color: gray;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+
+.search{
+    padding: 12px 20px;
+    width: 50%;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    background-color: #333;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.input-cheks input{
+    width: 20px ;
+    height: 20px;
+    font-family: sans-serif;
+}
+
+.input-cheks label{
+    font-size: 18px;
+    margin-left: 10px;
+    text-transform: capitalize;
+
+}
